@@ -47,10 +47,14 @@ html{
     background: #bbb;
 }
 
-
-/* ---##-- REUSABLE CSS --##--- */
-
 /* ----- GLOBAL BUTTON DESIGN ----- */
+.social-link{
+    text-decoration: none;
+    color: black;
+}
+.social-link:hover{
+    color: var(--first-color);
+}
 .btn{
     font-weight: 500;
     padding: 12px 20px;
@@ -66,6 +70,22 @@ html{
 .btn:hover{
     background: var(--second-color);
     color: var(--color-white);
+}
+
+.btn-link{
+	text-decoration: none;
+	color: var(--color-white);
+	font-size: 13px;
+	text-align: center;
+    background: var(--first-color);
+}
+.btn-link:hover{
+    background: var(--first-color-hover);
+}
+.btn-baixar{
+	text-decoration: none;
+	color: black;
+	font-size: 13px;
 }
 
 /* ----- GLOBAL ICONS DESIGN ----- */
@@ -181,7 +201,7 @@ nav{
     background: var(--third-color);
     color: var(--color-white);
     padding: 3px 8px;
-    font-size: 12px;
+    font-size: 16px;
     border-radius: 5px;
 }
 .featured-name{
@@ -209,17 +229,6 @@ nav{
 }
 .featured-text-btn>.blue-btn:hover{
     background: var(--first-color-hover);
-}
-.btn-link{
-	text-decoration: none;
-	color: var(--color-white);
-	font-size: 13px;
-	text-align: center;
-}
-.btn-baixar{
-	text-decoration: none;
-	color: black;
-	font-size: 13px;
 }
 .social_icons{
     display: flex;
