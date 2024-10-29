@@ -4,18 +4,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Função para abrir/fechar o menu lateral e animar os links
     function toggleMenu() {
+        const cvDownloadButton = document.getElementById("cv-download");
+        
         if (sidebarToggle.checked) {
             links.forEach((link, index) => {
                 link.style.transitionDelay = `${index * 0.2}s`;
                 link.style.opacity = "1";
                 link.style.transform = "translateX(0)";
             });
+            cvDownloadButton.style.transitionDelay = `${links.length * 0.2}s`;
+            cvDownloadButton.style.opacity = "1";
+            cvDownloadButton.style.transform = "translateX(0)";
         } else {
             links.forEach(link => {
                 link.style.transitionDelay = "0s";
                 link.style.opacity = "0";
                 link.style.transform = "translateX(50px)";
             });
+            cvDownloadButton.style.transitionDelay = "0s";
+            cvDownloadButton.style.opacity = "0";
+            cvDownloadButton.style.transform = "translateX(50px)";
         }
     }
 

@@ -124,14 +124,13 @@ i {
         width: 100%;
         padding: 20px 0;
         justify-content: flex-start;
-        opacity: 0;
-        transform: translateX(100px);
     }
 
     .botao-curriculo {
         position: relative;
         right: -20px;
-
+        opacity: 0;
+        transform: translateX(100px);
     }
 
     .open-sidebar-button,
