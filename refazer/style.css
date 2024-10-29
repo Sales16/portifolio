@@ -57,7 +57,7 @@ body{
     position: relative;
     display: flex;
     height: 80vh;
-    min-height: 700px;
+    min-height: 600px;
 }
 
 /* ----- CARDS ----- */
@@ -130,9 +130,6 @@ body{
 .social-link{
     text-decoration: none;
     color: var(--text-color-second);
-    padding: 5px;
-    border-radius: 50%;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
 .social-link:hover{
@@ -142,38 +139,19 @@ body{
 
 .social-link i{
     font-size: 30px;
-}
-
-
-
-
-.social_icons{
-    display: flex;
-    margin-top: 5em;
-    gap: 30px;
-}
-.icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
+    padding: 8px;
     border-radius: 50%;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-}
-.icon:hover{
-    color: var(--first-color);
 }
 
-/* ----- FEATURED IMAGE BOX ----- */
-.featured-image{
+.card-image {
     display: flex;
     justify-content: right;
     align-content: center;
     min-height: 80vh;
     width: 50%;
 }
+
 .image{
     margin: auto 0;
     width: 380px;
@@ -192,6 +170,22 @@ body{
         transform: translateY(10px);
         border-radius: 45% 55% 45% 55%;
     }
+}
+
+
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.icon:hover{
+    color: var(--first-color);
 }
 
 .scroll-btn{
@@ -215,10 +209,43 @@ body{
      font-size: 20px;
  }
 
- /* ----- MAIN BOX ----- */
-.section{
-    padding-block: 5em;
+
+.sobre {
+    padding-block: 3em;
 }
+.informacao {
+    background: var(--color-white);
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    border-radius: 20px;
+    padding-block: 30px 70px;
+    padding-inline: 20px;
+}
+.titulo-info {
+    text-align: center;
+}
+.informacao p {
+    text-align: left;
+    font-size: 15px;
+    color: #5f5f5f;
+    padding: 10px;
+}
+.btn-info {
+    text-align: center;
+    margin-top: 30px;
+}
+.botao-info {
+    text-decoration: none;
+    background: var(--first-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: var(--color-white);
+    transition: .3s;
+}
+.botao-info:hover {
+    background: var(--first-color-hover);
+}
+
+
 .row{
     display: flex;
     justify-content: space-between;
