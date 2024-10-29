@@ -64,7 +64,6 @@ nav {
     color: var(--first-color-hover);
 }
 
-
 .botao-curriculo {
     text-decoration: none;
     padding: 12px 20px;
@@ -77,9 +76,11 @@ nav {
     cursor: pointer;
     border: none;
     display: flex;
-    position: absolute; 
+    position: absolute;
     right: 9vw;
+    opacity: 1;
 }
+
 .botao-curriculo:hover {
     background-color: var(--second-color);
     color: white;
