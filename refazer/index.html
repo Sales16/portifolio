@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio | Eduardo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <script src="scripts.js" defer></script>
+    <script src="navbar.js" defer></script>
+    <nav id="navbar">
+        <a class="logo" href="#home">Portifólio</a>
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-button">
+            <i class="bx bx-menu icone" id="menu-icon"></i>
+        </label>
+        <label id="overlay" for="sidebar-active"></label>
+        <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-button">
+                <i class="bx bx-x icone" id="menu-icon"></i>
+            </label>
+            <a class="first" href="#home">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contatos">Contatos</a>
+            <button onclick="window.location.href='../assets/arquivos/Currículo - Eduardo Sales da Silva.pdf'" class="botao-curriculo">Baixar Arquivo <i class='bx bx-file'></i></button>
+        </div>
+    </nav>
+
+    <main class="wrapper">
+        <!-- -------------- FEATURED BOX ---------------- -->
+        <section class="featured-box" id="home">
+           <div class="featured-text">
+             <div class="featured-text-card">
+                 <span>Eduardo Sales</span>
+             </div>
+             <div class="featured-name">
+                 <p>Eu sou</p>
+                 <span class="typedText"></span>
+             </div>
+             <div class="featured-text-info">
+                 <p>Sou um desenvolvedor fullstack com experiência em sistemas de extração e manipulação de dados e em construir sites reponsivos e otimizados.
+                 </p>
+             </div>
+             <div class="featured-text-btn">
+                 <a class="btn btn-link" href="#contato">Entre em Contato<i class="uil uil-comments"></i></a>
+                 <a href="assets/arquivos/Currículo - Eduardo Sales da Silva.pdf" download target="_blank" class="btn btn-baixar">Baixar Currículo<i class="uil uil-file-alt"></i></a>
+             </div>
+             <div class="social_icons">
+                 <div class="icon"><a href="https://www.linkedin.com/in/eduardo-sales16" target="_blank" class="social-link"><i class="uil uil-linkedin"></i></a></div>
+                 <div class="icon"><a href="https://github.com/Sales16" target="_blank" class="social-link"><i class="uil uil-github"></i></a></div>
+             </div>
+           </div>
+           <div class="featured-image">
+             <div class="image">
+                 <img src="assets/images/avatar.jpeg" alt="avatar">
+             </div>
+           </div>
+           <div class="scroll-icon-box">
+             <a href="#sobre" class="scroll-btn">
+                 <i class="uil uil-mouse-alt"></i>
+                 <p>Role para Baixo</p>
+             </a>
+           </div>
+ 
+        </section>
+        <!-- -------------- ABOUT BOX ---------------- -->
+        <section class="section" id="sobre">
+           <div class="top-header">
+             <h1>Sobre Mim</h1>
+           </div>
+           <div class="row">
+             <div class="col">
+                 <div class="about-info">
+                     <h3>Introdução</h3>
+                     <p>Sou desenvolvedor de software com experiência em automação de processos e extração de dados. Domino tecnologias back-end e front-end, como Python, PHP, C#, .NET, e desenvolvimento web com HTML, CSS e JavaScript. Com habilidades avançadas em WordPress, crio sites dinâmicos e customizáveis, como um sistema de agendamentos para petshops. Utilizo Git para versionamento e estou atualmente em busca da certificação GitHub Foundations, consolidando minhas práticas em controle de versão e colaboração em projetos.</p>
+                     <div class="about-btn">
+                         <button class="btn">Baixar Curriculo<i class="uil uil-import"></i></button>
+                     </div>
+                 </div>
+             </div>
+             <div class="col">
+                 <div class="skills-box">
+                     <div class="skills-header">
+                         <h3>Frontend</h3>
+                     </div>
+                     <div class="skills-list">
+                         <span>HTML5</span>
+                         <span>CSS3</span>
+                         <span>JavaScript</span>
+                         <span>Bootstrap</span>
+                         <span>React</span>
+                         <span>Asp.Net</span>
+                         <span>WordPress</span>
+                         <span>Figma</span>
+                     </div>
+                 </div>
+                 <div class="skills-box">
+                     <div class="skills-header">
+                         <h3>Backend</h3>
+                     </div>
+                     <div class="skills-list">
+                         <span>Python</span>
+                         <span>VBA</span>
+                         <span>PHP</span>
+                         <span>C# .NET</span>
+                         <span>Selenium</span>
+                         <span>Pandas</span>
+                         <span>lxml</span>
+                     </div>
+                 </div>
+                 <div class="skills-box">
+                     <div class="skills-header">
+                         <h3>Database|Versionamento</h3>
+                     </div>
+                     <div class="skills-list">
+                         <span>MySQL</span>
+                         <span>MariaDB</span>
+                         <span>Git</span>
+                         <span>GitHub (certificação GitHub Foundations em andamento)</span>
+                     </div>
+                 </div>
+             </div>
+           </div>
+        </section>
+ 
+        <!-- -------------- PROJECT BOX ---------------- -->
+ 
+     <section class="section" id="projetos">
+           <div class="top-header">
+               <h1>Projects</h1>
+           </div>
+           <div class="project-container">
+             <div class="project-box">
+                 <i class="uil uil-briefcase-alt"></i>
+                 <h3>Completed</h3>
+                 <label>15+ Finished Projects</label>
+             </div>
+             <div class="project-box">
+                 <i class="uil uil-users-alt"></i>
+                 <h3>Clients</h3>
+                 <label>25+ Happy Clients</label>
+             </div>
+             <div class="project-box">
+                 <i class="uil uil-award"></i>
+                 <h3>Experience</h3>
+                 <label>7+ Years in the field</label>
+             </div>
+           </div>
+        </section>
+ 
+        <!-- -------------- CONTACT BOX ---------------- -->
+ 
+        <section class="section" id="contato">
+           <div class="top-header">
+             <h1>Entre em Contato</h1>
+             <span>Você tem um projeto em mente, entre em contato comigo aqui</span>
+           </div>
+           <div class="row">
+              <div class="col">
+                 <div class="contact-info">
+                     <h2>Contatos <i class="uil uil-corner-right-down"></i></h2>
+                     <p><i class="uil uil-envelope"></i> Email: eduardo.sales.silva1603@gmail.com</p>
+                     <p><i class="uil uil-phone"></i> Tel: (61) 9 8615-9746</p>
+                 </div>
+              </div>
+              <div class="col">
+                 <div class="form-control">
+                     <div class="form-inputs">
+                         <input type="text" class="input-field" placeholder="Nome">
+                         <input type="text" class="input-field" placeholder="Email">
+                     </div>
+                     <div class="text-area">
+                         <textarea placeholder="Mensagem"></textarea>
+                     </div>
+                     <div class="form-button">
+                         <button class="btn">Enviar <i class="uil uil-message"></i></button>
+                     </div>
+                 </div>
+              </div>
+           </div>
+        </section>
+ 
+     </main>
+ 
+</body>
+</html>
