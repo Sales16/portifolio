@@ -292,11 +292,11 @@ body{
 
 /* ----- CARROSSEL ----- */
 
-.carrosel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20px;
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
 }
 
 .card-list .card-item {
@@ -304,7 +304,7 @@ body{
 }
 
 .card-list .card-item .card-link {
-    width: 400px;
+    user-select: none;
     display: block;
     background: #fff;
     padding: 18px;
@@ -313,6 +313,9 @@ body{
     border: 2px solid transparent;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
     transition: 0.2s ease;
+}
+.card-list .card-item .card-link:active {
+    cursor: grabbing;
 }
 .card-list .card-item .card-link:hover {
     border-color: #5372F0;
@@ -323,6 +326,8 @@ body{
     aspect-ratio: 16/9;
     object-fit: cover;
     border-radius: 10px;
+    height: 100%;
+    max-height: 400px;
 }
 
 .card-list .card-link .badge {
@@ -336,17 +341,21 @@ body{
     border-radius: 50px;
 }
 
-.card-list .card-link .badge.desgin {
-    color: 123;
-    background-color: 123;
+.card-list .card-link .badge.designer {
+    color: #B22485;
+    background-color: #f7dff5;
 }
 .card-list .card-link .badge.editor {
-    color: 123;
-    background-color: 123;
+    color: #856404;
+    background-color: #FFF3CD;
 }
-.card-list .card-link .badge.market {
-    color: 123;
-    background-color: 123;
+.card-list .card-link .badge.marketer {
+    color: #B25A2B;
+    background-color: #FFE3D2;
+}
+.card-list .card-link .badge.gamer {
+    color: #205C20;
+    background-color: #D6F8D5;
 }
 
 .card-list .card-link .card-title {
@@ -373,7 +382,30 @@ body{
     background: #5372F0;
 }
 
+.card-wrapper .swiper-pagination-bullet {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #5372F0;
+}
 
+.card-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button {
+    color: #5372F0;
+    margin-top: -35px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-wrapper {
+        margin: 0 10px 25px;
+    }
+    .card-wrapper .swiper-slide-button {
+        display: none;
+    }
+}
 
 /* -- ## --- RESUABLE CSS -- ## -- */
 .top-header{

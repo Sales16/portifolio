@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -174,19 +175,18 @@
             <div class="top-header">
                 <h1>Projetos</h1>
             </div>
-            <div class="carrossel">
-                <div class="container">
+                <div class="container swiper">
                     <div class="card-wrapper">
-                        <ul class="card-list">
-                            <li class="card-item">
+                        <ul class="card-list swiper-wrapper">
+                            <li class="card-item swiper-slide">
                                 <a href="#" class="card-link">
                                     <img src="../assets/images/designer.jpg" alt="" class="card-image">
-                                    <p class="badge design">Design</p>
+                                    <p class="badge designer">Design</p>
                                     <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
                                     <button class='card-button bx bx-right-arrow-alt'></button>
                                 </a>
                             </li>
-                            <li class="card-item">
+                            <li class="card-item swiper-slide">
                                 <a href="#" class="card-link">
                                     <img src="../assets/images/developer.jpg" alt="" class="card-image">
                                     <p class="badge developer">Developer</p>
@@ -194,7 +194,7 @@
                                     <button class='card-button bx bx-right-arrow-alt'></button>
                                 </a>
                             </li>
-                            <li class="card-item">
+                            <li class="card-item swiper-slide">
                                 <a href="#" class="card-link">
                                     <img src="../assets/images/marketer.jpg" alt="" class="card-image">
                                     <p class="badge marketer">Marketer</p>
@@ -202,7 +202,7 @@
                                     <button class='card-button bx bx-right-arrow-alt'></button>
                                 </a>
                             </li>
-                            <li class="card-item">
+                            <li class="card-item swiper-slide">
                                 <a href="#" class="card-link">
                                     <img src="../assets/images/gamer.jpg" alt="" class="card-image">
                                     <p class="badge gamer">Gamer</p>
@@ -210,7 +210,7 @@
                                     <button class='card-button bx bx-right-arrow-alt'></button>
                                 </a>
                             </li>
-                            <li class="card-item">
+                            <li class="card-item swiper-slide">
                                 <a href="#" class="card-link">
                                     <img src="../assets/images/editor.jpg" alt="" class="card-image">
                                     <p class="badge editor">Editor</p>
@@ -219,73 +219,14 @@
                                 </a>
                             </li>
                         </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
                     </div>
                 </div>
-            </div>
         </section>
     </main>
-
-
-    
-
-    <!-- -------------- PROJECT BOX ---------------- -->
-
-    <section class="section" id="projetos">
-        <div class="top-header">
-            <h1>Projects</h1>
-        </div>
-        <div class="project-container">
-            <div class="project-box">
-                <i class="uil uil-briefcase-alt"></i>
-                <h3>Completed</h3>
-                <label>15+ Finished Projects</label>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-users-alt"></i>
-                <h3>Clients</h3>
-                <label>25+ Happy Clients</label>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-award"></i>
-                <h3>Experience</h3>
-                <label>7+ Years in the field</label>
-            </div>
-        </div>
-    </section>
-
-    <!-- -------------- CONTACT BOX ---------------- -->
-
-    <section class="section" id="contato">
-        <div class="top-header">
-            <h1>Entre em Contato</h1>
-            <span>Você tem um projeto em mente, entre em contato comigo aqui</span>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="contact-info">
-                    <h2>Contatos <i class="uil uil-corner-right-down"></i></h2>
-                    <p><i class="uil uil-envelope"></i> Email: eduardo.sales.silva1603@gmail.com</p>
-                    <p><i class="uil uil-phone"></i> Tel: (61) 9 8615-9746</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="form-control">
-                    <div class="form-inputs">
-                        <input type="text" class="input-field" placeholder="Nome">
-                        <input type="text" class="input-field" placeholder="Email">
-                    </div>
-                    <div class="text-area">
-                        <textarea placeholder="Mensagem"></textarea>
-                    </div>
-                    <div class="form-button">
-                        <button class="btn">Enviar <i class="uil uil-message"></i></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="scripts.js" defer></script>
 </body>
