@@ -29,6 +29,8 @@ html {
 
 body {
     background: var(--body-color);
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 /* ----- SCROLLBAR ----- */
@@ -679,5 +681,9 @@ h3 {
 
     .btn-info {
         text-align: center;
+    }
+
+    .link-projeto a{
+        display: block;
     }
 }
