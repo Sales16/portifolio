@@ -4,15 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio | Eduardo</title>
+
+    <!-- Link CSS pesonalizado -->
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Link CSS da Navbar -->
     <link rel="stylesheet" href="navbar.css">
+
+    <!-- Link CSS do Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Link CSS do Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Link CSS do Footer -->
+    <link rel="stylesheet" href="footer.css">
+
+    <title>Portifólio | Eduardo</title>
 </head>
 
 <body>
-    <script src="navbar.js" defer></script>
+    <!-- Navbar -->
 
     <nav id="navbar">
         <a class="logo" href="#home">Portifólio</a>
@@ -35,7 +48,8 @@
         </div>
     </nav>
 
-    <main class="principal">
+    <!-- Introdução -->
+    <main class="main">
         <section class="inicio" id="home">
             <div class="texto">
                 <div class="card-texto">
@@ -65,7 +79,6 @@
                     <img src="../assets/images/avatar.jpeg" alt="Eduardo Sales">
                 </div>
             </div>
-
             <div class="card-scroll">
                 <a href="#sobre" class="scroll-btn">
                     <i class='bx bx-mouse'></i>
@@ -74,12 +87,13 @@
             </div>
         </section>
 
+        <!-- Sobre -->
         <section class="sobre" id="sobre">
             <div class="top-header">
                 <h1>Saiba Mais</h1>
             </div>
             <div class="informacao">
-                <h3 class="titulo-info">Sobre Mim</h3>
+                <h2 class="titulo-info">Sobre Mim</h2>
                 <p>
                     Olá, Meu nome é Eduardo Sales, tenho 19 anos e no momento estou cursando Análise e Desenvolvimento
                     de Sistemas no UniCEUB.
@@ -96,85 +110,88 @@
                     capacidades. No momento estou em busca da certificação GitHub Foundations, consolidando minhas
                     práticas em controle de versão e colaboração em projetos.
                 </p>
+
+
+                <h2 class="titulo-info">Habilidades</h2>
+                <div class="row">
+                    <div class="col">
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Frontend</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+                                <span>Asp.Net</span>
+                                <span>WordPress</span>
+                                <span>Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Backend</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>Python</span>
+                                <span>VBA</span>
+                                <span>PHP</span>
+                                <span>C# .NET</span>
+                                <span>Selenium</span>
+                                <span>Pandas</span>
+                                <span>lxml</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Banco de Dados</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>MySQL</span>
+                                <span>MariaDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Outros</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>Git</span>
+                                <span>GitHub (certificação em andamento)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="skills-box">
+                            <div class="skills-header-andamento">
+                                <h3>Em Andamento</h3>
+                            </div>
+                            <div class="skills-list andamento">
+                                <span>React</span>
+                                <span>Angular</span>
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="btn-info"><a href="assets/arquivos/Currículo - Eduardo Sales da Silva.pdf" download
                         class="botao-info">Baixar Currículo<i class='bx bx-file'></i></a></div>
-            </div>
-            <div class="top-header">
-                <h1>Habilidades</h1>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="skills-box">
-                        <div class="skills-header">
-                            <h3>Frontend</h3>
-                        </div>
-                        <div class="skills-list">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
-                            <span>Bootstrap</span>
-                            <span>Asp.Net</span>
-                            <span>WordPress</span>
-                            <span>Figma</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="skills-box">
-                        <div class="skills-header">
-                            <h3>Backend</h3>
-                        </div>
-                        <div class="skills-list">
-                            <span>Python</span>
-                            <span>VBA</span>
-                            <span>PHP</span>
-                            <span>C# .NET</span>
-                            <span>Selenium</span>
-                            <span>Pandas</span>
-                            <span>lxml</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="skills-box">
-                        <div class="skills-header">
-                            <h3>Banco de Dados</h3>
-                        </div>
-                        <div class="skills-list">
-                            <span>MySQL</span>
-                            <span>MariaDB</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="skills-box">
-                        <div class="skills-header">
-                            <h3>Outros</h3>
-                        </div>
-                        <div class="skills-list">
-                            <span>Git</span>
-                            <span>GitHub (certificação em andamento)</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="skills-box">
-                        <div class="skills-header-andamento">
-                            <h3>Em Andamento</h3>
-                        </div>
-                        <div class="skills-list andamento">
-                            <span>React</span>
-                            <span>Angular</span>
-                            <span>Node.js</span>
-                        </div>
-                    </div>
-                </div>
         </section>
 
-        <section id="projetos">
+        <!-- Carrossel -->
+
+        <section>
             <div class="top-header">
                 <h1>Projetos</h1>
             </div>
+            <div class="carrossel">
                 <div class="container swiper">
                     <div class="card-wrapper">
                         <ul class="card-list swiper-wrapper">
@@ -224,11 +241,51 @@
                         <div class="swiper-slide-button swiper-button-prev"></div>
                     </div>
                 </div>
+            </div>
         </section>
     </main>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="top-footer titulo-footer">
+            <p>Eduardo Sales</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#proejtos">Projetos</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <a href="" class="social-link"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="" class="social-link"><i class='bx bxl-github'></i></a>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home">Eduardo Sales</a> - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+
+
+    <script src="navbar.js" defer></script>
+    <!-- Link Scripts Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Link Scripts Typed -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Link Scripts Personalizados -->
     <script src="scripts.js" defer></script>
+
 </body>
 
 </html>
