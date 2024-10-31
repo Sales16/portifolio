@@ -266,7 +266,11 @@ h3 {
     padding-block: 20px;
 }
 
-.informacao p {
+.informacao-texto, .informacao-habilidade {
+    padding-inline: 50px;
+}
+
+.informacao-texto p {
     text-align: left;
     font-size: 15px;
     color: #5f5f5f;
@@ -304,6 +308,8 @@ h3 {
     display: flex;
     width: 50%;
 }
+
+
 
 .skills-box {
     margin: 10px;
@@ -547,46 +553,14 @@ h3 {
 /* ----- media screen ----- */
 
 @media only screen and (max-width: 900px) {
-    .nav-button {
-        display: none;
-    }
-
-    .nav-menu.responsive {
-        left: 0;
-    }
-
-    .nav-menu {
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: rgba(255, 255, 255, 0.7);
-        backdrop-filter: blur(20px);
-        width: 100%;
-        min-height: 450px;
-        height: 90vh;
-        transition: .3s;
-    }
-
-    .nav_menu_list {
-        flex-direction: column;
-    }
-
-    .nav-menu-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .featured-box {
+    .inicio {
+        margin-top: -100px;
         flex-direction: column;
         justify-content: center;
         height: 100vh;
     }
 
-    .featured-text {
+    .texto {
         width: 100%;
         order: 2;
         justify-content: center;
@@ -594,11 +568,11 @@ h3 {
         min-height: 60vh;
     }
 
-    .social_icons {
+    .card-social {
         margin-top: 2em;
     }
 
-    .featured-image {
+    .box-imagem {
         order: 1;
         justify-content: center;
         min-height: 150px;
@@ -634,37 +608,54 @@ h3 {
         width: 100%;
     }
 
-    .about-info,
-    .contact-info {
+    .informacao-texto {
         width: 100%;
     }
-
-    .project-container {
-        justify-content: center;
-    }
-
-    .project-box {
-        width: 80%;
-    }
-
 }
 
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 
 @media only screen and (max-width: 540px) {
-    .featured-name {
-        font-size: 40px;
+    .card-texto {
+        margin-top: 30px;
+    }
+    .card-texto span {
+        font-size: clamp(14px, 3.2vw, 22px);
+    }
+    .card-type {
+        font-size: 35px;
     }
 
-    .project-box {
-        width: 100%;
-    }
-
-    .form-inputs {
+    .card-btn {
         flex-direction: column;
+        width: max-content;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        gap: 0px;
+    }
+    .card-social {
+        justify-content: center;
+        margin-top: 0px;
     }
 
-    .input-field {
-        width: 100%;
+    .card-scroll {
+        position: absolute;
+        bottom: 0px;
+        left: 53%;
+        margin-bottom: -20px;
+    }
+
+    .scroll-btn {
+        text-align: center;
+        bottom: 0px;
+    }
+
+    .informacao-texto, .informacao-habilidade {
+        padding-inline: 5px;
+    }
+
+    .btn-info {
+        text-align: center;
     }
 }
