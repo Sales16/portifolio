@@ -2,6 +2,8 @@
 
 Este é o meu portfólio, onde compartilho informações sobre mim e os projetos em que trabalhei.
 
+Acesse [clicando aqui](https://sales16.github.io/portifolio/)
+
 ## Sobre mim
 Meu nome é Eduardo Sales e sou um desenvolvedor de software apaixonado por criar soluções inovadoras. Tenho experiência em Python, WordPress, PHP, VBA e C# .Net além de desenvolvimento web com HTML, CSS e JavaScript. Estou sempre em busca de novos desafios e oportunidades para aprender e crescer profissionalmente.
 
