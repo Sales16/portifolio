@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* ----- VARIAVEIS ----- */
-
-:root{
+:root {
     --body-color: rgb(250, 250, 250);
     --color-white: rgb(255, 255, 255);
 
@@ -19,53 +17,89 @@
 }
 
 * {
-    padding: 0;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--body-color);
 }
 
 /* ----- SCROLLBAR ----- */
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 10px;
     border-radius: 25px;
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background: #ccc;
     border-radius: 30px;
 }
-::-webkit-scrollbar-thumb:hover{
+
+::-webkit-scrollbar-thumb:hover {
     background: #bbb;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
-body{
-    background: var(--body-color);
-}
-
-
-/* ----- MAIN ----- */
-
-.principal {
+.main {
     padding-inline: 10vw;
 }
 
-/* ----- FEATURED BOX ----- */
-.inicio{
+/* -- ## --- RESUABLE CSS -- ## -- */
+.top-header {
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+.top-header h1 {
+    font-weight: 600;
+    color: var(--text-color-second);
+    margin-bottom: 10px;
+}
+
+.top-header span {
+    color: #999;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text-color-second);
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+/* Introdução */
+
+.inicio {
     position: relative;
     display: flex;
     height: 88vh;
     min-height: 600px;
 }
 
-/* ----- CARDS ----- */
-.texto{
+.texto {
     position: relative;
     display: flex;
     justify-content: center;
@@ -75,86 +109,88 @@ body{
     width: 50%;
     padding-left: 20px;
 }
-.card-texto span{
+
+.card-texto span {
     background: var(--third-color);
     color: var(--color-white);
     padding: 3px 8px;
     font-size: 16px;
     border-radius: 5px;
 }
+
 .card-type {
     font-size: 50px;
     font-weight: 600;
     color: var(--text-color-second);
     margin-block: 20px;
 }
-.typedText{
+
+.typedText {
     text-transform: capitalize;
     color: var(--text-color-third);
 }
-.card-info{
+
+.card-info {
     font-size: 15px;
     margin-bottom: 30px;
     color: var(--text-color-second);
 }
-.card-btn{
+
+.card-btn {
     display: flex;
     gap: 20px;
 }
 
-
-/* ----- BOTAO SOBRE ----- */
-
-.btn-sobre{
+.btn-sobre {
     background-color: var(--first-color);
     color: white;
     transition: .3s;
 }
-.btn-sobre:hover{
+
+.btn-sobre:hover {
     background-color: var(--first-color-hover);
 }
 
-.btn-baixar{
+.btn-baixar {
     background-color: #efefef;
     color: #000;
     transition: .3s;
 }
-.btn-baixar:hover{
+
+.btn-baixar:hover {
     background-color: var(--second-color);
     color: var(--color-white);
 }
-.btn-sobre, .btn-baixar {
+
+.btn-sobre,
+.btn-baixar {
     text-decoration: none;
     padding: 12px 20px;
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
-/* ----- SOCIAL ----- */
-
-.card-social{
+.card-social {
     display: flex;
     gap: 20px;
 }
 
-.social-link{
+.social-link {
     text-decoration: none;
     color: var(--text-color-second);
+    transition: 0.3s ease-in-out;
 }
 
-.social-link:hover{
+.social-link:hover {
     transform: scale(1.1);
-    transition: transform 0.3s;
 }
 
-.social-link i{
+.social-link i {
     font-size: 30px;
     padding: 8px;
     border-radius: 50%;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
 }
-
-/* ----- IMAGEM ----- */
 
 .box-imagem {
     display: flex;
@@ -164,7 +200,7 @@ body{
     width: 50%;
 }
 
-.image{
+.image {
     margin: auto 0;
     width: 380px;
     height: 380px;
@@ -172,23 +208,25 @@ body{
     overflow: hidden;
     animation: imgFloat 7s ease-in-out infinite;
 }
-.image img{
+
+.image img {
     width: 380px;
     height: 380px;
     object-fit: cover;
 }
+
 @keyframes imgFloat {
-    50%{
+    50% {
         transform: translateY(10px);
         border-radius: 45% 55% 45% 55%;
     }
 }
 
 /* ----- BOTAO SCROLL ----- */
- 
-.scroll-btn{
+
+.scroll-btn {
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     left: 50%;
     translate: -50%;
     display: flex;
@@ -202,16 +240,18 @@ body{
     background: var(--color-white);
     border-radius: 30px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
- }
- .scroll-btn i{
-     font-size: 20px;
- }
+}
+
+.scroll-btn i {
+    font-size: 20px;
+}
 
 /* ----- SOBRE ----- */
 
 .sobre {
-    padding-block: 3em;
+    padding-block: 1em;
 }
+
 .informacao {
     background: var(--color-white);
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
@@ -219,80 +259,103 @@ body{
     padding-block: 30px 40px;
     padding-inline: 20px;
 }
+
 .titulo-info {
     text-align: center;
+    color: var(--text-color-third);
+    padding-block: 20px;
 }
-.informacao p {
+
+.informacao-texto, .informacao-habilidade {
+    padding-inline: 50px;
+}
+
+.informacao-texto p {
     text-align: left;
     font-size: 15px;
     color: #5f5f5f;
     padding: 10px;
 }
+
 .btn-info {
-    text-align: center;
+    text-align: right;
     margin-top: 30px;
 }
+
 .botao-info {
     text-decoration: none;
-    background: var(--first-color);
+    background: var(--text-color-third);
     padding: 10px 20px;
     border-radius: 10px;
     color: var(--color-white);
     transition: .3s;
 }
+
 .botao-info:hover {
     background: var(--first-color-hover);
 }
 
 /* ----- HABILIDADES ----- */
 
-.row{
+.row {
     display: flex;
     justify-content: space-between;
     width: 100%;
     gap: 25px;
 }
-.col{
+
+.col {
     display: flex;
     width: 50%;
 }
-.skills-box{
+
+
+
+.skills-box {
     margin: 10px;
 
 }
-.skills-header{
+
+.skills-header {
     margin-bottom: 30px;
     text-align: left;
 }
-.skills-header h3{
+
+.skills-header h3 {
     text-align: left;
 }
-.skills-header-andamento h3{
+
+.skills-header-andamento h3 {
     text-align: left;
     color: brown;
 }
-.skills-list{
+
+.skills-list {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
 }
-.skills-list span{
+
+.skills-list span {
     font-size: 14px;
     background: var(--first-color);
     color: var(--color-white);
     padding: 2px 10px;
     border-radius: 5px;
 }
+
 .andamento span {
     background-color: brown;
 }
 
-/* ----- PROJETOS ----- */
 
+/* Carrossel */
+.carrossel {
+    display: flex;
+    justify-content: center;
+}
 
-/* ----- CARROSSEL ----- */
-
-.card-wrapper{
+.card-wrapper {
     max-width: 1100px;
     margin: 0 60px 35px;
     padding: 20px 10px;
@@ -314,9 +377,11 @@ body{
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
     transition: 0.2s ease;
 }
+
 .card-list .card-item .card-link:active {
     cursor: grabbing;
 }
+
 .card-list .card-item .card-link:hover {
     border-color: #5372F0;
 }
@@ -345,14 +410,17 @@ body{
     color: #B22485;
     background-color: #f7dff5;
 }
+
 .card-list .card-link .badge.editor {
     color: #856404;
     background-color: #FFF3CD;
 }
+
 .card-list .card-link .badge.marketer {
     color: #B25A2B;
     background-color: #FFE3D2;
 }
+
 .card-list .card-link .badge.gamer {
     color: #205C20;
     background-color: #D6F8D5;
@@ -402,100 +470,135 @@ body{
     .card-wrapper {
         margin: 0 10px 25px;
     }
+
     .card-wrapper .swiper-slide-button {
         display: none;
     }
 }
 
-/* -- ## --- RESUABLE CSS -- ## -- */
-.top-header{
+
+/* Contato */
+
+.card-contato {
+    position: relative;
+    background-color: var(--second-color);
+    color: #fff;
     text-align: center;
-    margin-bottom: 3em;
-    margin-top: 2em;
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    border-radius: 12px;
+    padding-block: 40px;
+    margin-bottom: 15px;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
 }
-.top-header h1{
-    font-weight: 600;
-    color: var(--text-color-second);
+
+.card-contato::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    transition: top 0.3s ease;
+    z-index: 1;
+}
+
+.card-contato:hover::before {
+    top: 0;
+}
+
+
+.conteudo-contato {
+    position: relative;;
+    text-align: center;
+    z-index: 2;
+    color: #ffffff;
+}
+
+.info-contato {
     margin-bottom: 10px;
 }
-.top-header span{
-    color: #999;
+
+.info-contato a {
+    display: block;
+    padding-block: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    width: max-content;
+    margin: auto;
+    transition: .3s ease;
+    color: #fff;
 }
-h3{
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--text-color-second);
-    margin-bottom: 15px;
+
+.info-contato a:hover {
+    color: var(--first-color);
+    transform: scale(1.1);
+}
+
+.contato-social-icons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.contato-social-icons i {
+    background-color: #fff;
 }
 
 /* ----- media screen ----- */
 
 @media only screen and (max-width: 900px) {
-    .nav-button{
-        display: none;
-    }
-    .nav-menu.responsive{
-        left: 0;
-    }
-    .nav-menu{
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: rgba(255, 255, 255, 0.7);
-        backdrop-filter: blur(20px);
-        width: 100%;
-        min-height: 450px;
-        height: 90vh;
-        transition: .3s;
-    }
-    .nav_menu_list{
-        flex-direction: column;
-    }
-    .nav-menu-btn{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .featured-box{
+    .inicio {
+        margin-top: -100px;
         flex-direction: column;
         justify-content: center;
         height: 100vh;
     }
-    .featured-text{
+
+    .texto {
         width: 100%;
         order: 2;
         justify-content: center;
         align-content: flex-start;
         min-height: 60vh;
     }
-    .social_icons{
+
+    .card-social {
         margin-top: 2em;
     }
-    .featured-image{
+
+    .box-imagem {
         order: 1;
         justify-content: center;
         min-height: 150px;
         width: 100%;
         margin-top: 65px;
     }
-    .image, .image img{
+
+    .image,
+    .image img {
         width: 150px;
         height: 150px;
     }
-    .row{
+
+    .row {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 50px;
     }
-    .col{
+
+    .col {
         display: flex;
         justify-content: center;
         width: 100%;
     }
+
     .skills-box {
         background: var(--color-white);
         box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
@@ -504,54 +607,55 @@ h3{
         padding-inline: 20px;
         width: 100%;
     }
-    .about-info, .contact-info{
+
+    .informacao-texto {
         width: 100%;
     }
-    .project-container{
-        justify-content: center;
-    }
-    .project-box{
-        width: 80%;
-    }
-
 }
 
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 
-@media only screen and (max-width: 540px){
-    .featured-name{
-        font-size: 40px;
+@media only screen and (max-width: 540px) {
+    .card-texto {
+        margin-top: 30px;
     }
-    .project-box{
-        width: 100%;
+    .card-texto span {
+        font-size: clamp(14px, 3.2vw, 22px);
     }
-    .form-inputs{
+    .card-type {
+        font-size: 35px;
+    }
+
+    .card-btn {
         flex-direction: column;
+        width: max-content;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        gap: 0px;
     }
-    .input-field{
-        width: 100%;
+    .card-social {
+        justify-content: center;
+        margin-top: 0px;
+    }
+
+    .card-scroll {
+        position: absolute;
+        bottom: 0px;
+        left: 53%;
+        margin-bottom: -20px;
+    }
+
+    .scroll-btn {
+        text-align: center;
+        bottom: 0px;
+    }
+
+    .informacao-texto, .informacao-habilidade {
+        padding-inline: 5px;
+    }
+
+    .btn-info {
+        text-align: center;
     }
 }
-
-
-
-
-
-
-
-
-
-
-/* .icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-}
-.icon:hover{
-    color: var(--first-color);
-} */
