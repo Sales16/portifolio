@@ -640,6 +640,9 @@ h3 {
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 
 @media only screen and (max-width: 540px) {
+    html, body {
+        overflow-x: hidden;
+    }
     .card-texto {
         margin-top: 30px;
     }
@@ -685,5 +688,8 @@ h3 {
 
     .link-projeto a{
         display: block;
+    }
+    .info-contato a {
+        font-size: 13px;
     }
 }
