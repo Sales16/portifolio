@@ -58,6 +58,7 @@ body {
 }
 
 /* -- ## --- RESUABLE CSS -- ## -- */
+
 .top-header {
     text-align: center;
     margin-bottom: 1em;
@@ -84,13 +85,6 @@ h3 {
     color: var(--text-color-second);
     margin-bottom: 15px;
 }
-
-
-
-
-
-
-
 
 /* Introdução */
 
@@ -268,7 +262,8 @@ h3 {
     padding-block: 20px;
 }
 
-.informacao-texto, .informacao-habilidade {
+.informacao-texto,
+.informacao-habilidade {
     padding-inline: 50px;
 }
 
@@ -350,8 +345,8 @@ h3 {
     background-color: brown;
 }
 
-
 /* Carrossel */
+
 .carrossel {
     display: flex;
     justify-content: center;
@@ -418,7 +413,7 @@ h3 {
     background-color: #FFF3CD;
 }
 
-.card-list .card-link .badge.javascript  {
+.card-list .card-link .badge.javascript {
     color: #B25A2B;
     background-color: #FFE3D2;
 }
@@ -427,6 +422,7 @@ h3 {
     color: #205C20;
     background-color: #D6F8D5;
 }
+
 .card-list .card-link .badge.wordpress {
     color: #5c202d;
     background-color: #ffd0d7;
@@ -442,7 +438,8 @@ h3 {
     text-align: center;
     margin-top: 30px;
 }
-.link-projeto a{
+
+.link-projeto a {
     border: 2px solid #5372F0;
     border-radius: 20px;
     text-decoration: none;
@@ -451,12 +448,14 @@ h3 {
     margin: 30px 0 5px;
     transition: 0.4s ease;
 }
-.link-projeto a:hover{
+
+.link-projeto a:hover {
     color: #fff;
     background: #5372F0;
 
 
 }
+
 .card-list .card-link .card-button {
     text-align: center;
     padding: 10px 20px;
@@ -500,7 +499,6 @@ h3 {
     }
 }
 
-
 /* Contato */
 
 .card-contato {
@@ -535,9 +533,9 @@ h3 {
     top: 0;
 }
 
-
 .conteudo-contato {
-    position: relative;;
+    position: relative;
+    ;
     text-align: center;
     z-index: 2;
     color: #ffffff;
@@ -574,7 +572,7 @@ h3 {
     background-color: #fff;
 }
 
-/* ----- media screen ----- */
+/* ----- MEDIA QUERY ----- */
 
 @media only screen and (max-width: 900px) {
     .inicio {
@@ -637,18 +635,23 @@ h3 {
     }
 }
 
-/* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
+/* ----- MEDIA QUERY == 540px  ----- */
 
 @media only screen and (max-width: 540px) {
-    html, body {
+
+    html,
+    body {
         overflow-x: hidden;
     }
+
     .card-texto {
         margin-top: 30px;
     }
+
     .card-texto span {
         font-size: clamp(14px, 3.2vw, 22px);
     }
+
     .card-type {
         font-size: 35px;
     }
@@ -662,6 +665,7 @@ h3 {
         gap: 0px;
 
     }
+
     .card-social {
         justify-content: center;
         margin-top: 0px;
@@ -671,7 +675,8 @@ h3 {
         display: none;
     }
 
-    .informacao-texto, .informacao-habilidade {
+    .informacao-texto,
+    .informacao-habilidade {
         padding-inline: 5px;
     }
 
@@ -679,9 +684,10 @@ h3 {
         text-align: center;
     }
 
-    .link-projeto a{
+    .link-projeto a {
         display: block;
     }
+
     .info-contato a {
         font-size: 13px;
     }

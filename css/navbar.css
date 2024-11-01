@@ -1,3 +1,5 @@
+/* NAVBAR */
+
 nav {
     background-color: var(--body-color);
     height: 90px;
@@ -14,7 +16,7 @@ nav {
     font-size: 30px;
     font-weight: 600;
     z-index: 1;
-    width: max-content;  
+    width: max-content;
 }
 
 .icone {
@@ -56,8 +58,6 @@ nav {
     color: var(--first-color-hover);
 }
 
-
-
 .botao-curriculo {
     text-decoration: none;
     padding: 12px 20px;
@@ -91,6 +91,8 @@ i {
     display: none;
 }
 
+/* MEDIA QUERY */
+
 @media (max-width: 1350px) {
     .links-container {
         justify-content: flex-start;
@@ -122,7 +124,7 @@ i {
         opacity: 0;
         transform: translateX(50px);
         transition: 0.3s ease;
-   }
+    }
 
     .links-container a:hover {
         color: var(--first-color-hover);
@@ -150,7 +152,6 @@ i {
         opacity: 1;
         transform: translateX(0);
     }
-
 
     #sidebar-active:checked~#overlay {
         height: 100%;

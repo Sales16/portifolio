@@ -1,10 +1,10 @@
-/* ----- FOOTER BOX ----- */
+/* ----- FOOTER ----- */
 
 .mobile-footer {
     display: none;
 }
 
-footer{
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,57 +14,69 @@ footer{
     padding-block: 40px 20px;
 }
 
-.top-footer p{
+.top-footer p {
     font-size: 25px;
     font-weight: 600;
     color: var(--text-color-third);
 }
-.middle-footer .footer-menu{
+
+.middle-footer .footer-menu {
     display: flex;
 }
-.footer_menu_list{
+
+.footer_menu_list {
     list-style: none;
     transition: 0.3s;
-    display: inline-block; 
+    display: inline-block;
 }
-.footer_menu_list a{
+
+.footer_menu_list a {
     transition: 0.3s;
 }
-.footer_menu_list:hover, .footer_menu_list a:hover{
+
+.footer_menu_list:hover,
+.footer_menu_list a:hover {
     color: var(--first-color-hover);
     transform: scale(1.1);
 }
-.footer_menu_list a{
+
+.footer_menu_list a {
     text-decoration: none;
     color: var(--text-color-second);
     font-weight: 500;
     margin-inline: 20px;
 }
-.footer-social-icons{
+
+.footer-social-icons {
     display: flex;
-    gap: 30px;   
+    gap: 30px;
 }
-.bottom-footer{
+
+.bottom-footer {
     font-size: 14px;
     margin-top: 10px;
     color: black;
     font-weight: 500;
     text-align: center;
 }
-.bottom-footer a{
+
+.bottom-footer a {
     text-decoration: underline;
     transition: 0.3s;
     display: inline-block;
 }
-.bottom-footer a:hover{
+
+.bottom-footer a:hover {
     transform: scale(1.05);
 }
 
-/* Responsive */
-@media screen and (max-width: 430px){
+/* MEDIA QUERY */
+
+@media screen and (max-width: 430px) {
     .responsive-footer {
         display: none;
     }
+
     .mobile-footer {
         display: block;
     }
