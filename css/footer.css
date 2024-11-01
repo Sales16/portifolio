@@ -1,4 +1,9 @@
 /* ----- FOOTER BOX ----- */
+
+.mobile-footer {
+    display: none;
+}
+
 footer{
     display: flex;
     justify-content: center;
@@ -6,7 +11,7 @@ footer{
     flex-direction: column;
     row-gap: 30px;
     background: #F8F8F8;
-    padding-block: 40px 60px;
+    padding-block: 40px 20px;
 }
 
 .top-footer p{
@@ -53,4 +58,14 @@ footer{
 }
 .bottom-footer a:hover{
     transform: scale(1.05);
+}
+
+/* Responsive */
+@media screen and (max-width: 430px){
+    .responsive-footer {
+        display: none;
+    }
+    .mobile-footer {
+        display: block;
+    }
 }
