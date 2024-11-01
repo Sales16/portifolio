@@ -109,7 +109,7 @@ h3 {
     min-height: 80vh;
     flex-direction: column;
     width: 50%;
-    padding-left: 20px;
+
 }
 
 .card-texto span {
@@ -660,6 +660,7 @@ h3 {
         justify-content: center;
         margin: auto;
         gap: 0px;
+
     }
     .card-social {
         justify-content: center;
@@ -667,15 +668,7 @@ h3 {
     }
 
     .card-scroll {
-        position: absolute;
-        bottom: 0px;
-        left: 53%;
-        margin-bottom: -20px;
-    }
-
-    .scroll-btn {
-        text-align: center;
-        bottom: 0px;
+        display: none;
     }
 
     .informacao-texto, .informacao-habilidade {
