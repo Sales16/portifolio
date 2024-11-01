@@ -48,17 +48,15 @@ nav {
     color: var(--text-color-second);
     width: max-content;
     font-weight: 500;
-    transition: .2s;
+    transition: .3s ease;
 }
-
-.first {
-    margin-left: auto;
-}
-
 
 .links-container a:hover {
-    background-color: var(--accent-color);
+    transform: scale(1.05);
+    color: var(--first-color-hover);
 }
+
+
 
 .botao-curriculo {
     text-decoration: none;
